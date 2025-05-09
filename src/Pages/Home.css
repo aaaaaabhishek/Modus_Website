@@ -1,0 +1,169 @@
+ /* .custom-link {
+    color: white;
+
+  }
+  
+  .custom-link:hover {
+    color: white;
+    text-decoration: underline;
+
+  }
+  .marquee-container {
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    padding: 10px 0;
+    z-index: 88px;
+  }
+   
+  .marquee-text {
+    display: inline-block;
+    padding-left: 100%;
+    padding-top: 13rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #ffffff; 
+    animation: marquee 40s linear infinite;
+  }
+   
+  /* Define the animation */
+  /* @keyframes marquee {
+    0%   { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+/*    
+  /* Pause the animation on hover */
+  /* .marquee-text:hover {
+    animation-play-state: paused;
+  } */
+  .home-container {
+    position: relative;
+    background-image: url("https://modussystems.com/images/1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background-color: rgba(13, 47, 114, 0.6); */
+
+    background-color: rgba(0, 112, 192, 0.6);
+
+    z-index: 0;
+  }
+  
+  .navbar {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .custom-link {
+    color: rgb(255, 255, 255) !important;
+    font-weight: 500;
+    margin-left: 15px;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo-text {
+    font-size: 12px;
+    color: #ffffff; /* Adjust color as needed */
+    margin-top: 5px;
+    font-weight: normal;
+  }
+  /* Navbar link styling */
+  .navbar-nav .nav-item .nav-link {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px; /* Padding to create space for the underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+    color: inherit; /* Inherit color for the default state */
+    font-weight: 500; /* Optional: Add a font-weight */
+  }
+  
+  /* Underline effect with smooth transition */
+  .navbar-nav .nav-item .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; /* Initially hide the underline */
+    height: 2px; /* Thickness of the underline */
+    background-color: transparent;
+    transition: background-color 0.3s ease, width 0.3s ease; /* Smooth transition for the underline */
+  }
+  
+  /* Hover effects */
+  .navbar-nav .nav-item .nav-link:hover {
+    color: blue; /* Change text color to blue on hover */
+  }
+  
+  .navbar-nav .nav-item .nav-link:hover::after {
+    background-color: blue; /* Set underline color to blue */
+    width: 100%; /* Expand the underline on hover */
+  }
+  
+  /* Custom cursor effect */
+  .navbar-nav .nav-item .nav-link:hover {
+    cursor: pointer; /* Make the cursor a pointer when hovering */
+  }
+  /* Home.css */
+  
+  /* General styling for the navbar */
+  .navbar-nav .nav-item {
+    position: relative; /* Ensure the child divs are positioned correctly */
+  }
+  
+  /* Styling for the "Company" menu item when hovered */
+  .company-container .additional-links {
+    display: none; /* Initially hide the links */
+    position: absolute; /* Position the additional links below "Company" */
+    top: 100%; /* Position below the item */
+    left: 0;
+    z-index: 10;
+    padding: 0;
+    min-width: 100%;
+  }
+  
+  .company-container:hover .additional-links {
+    display: block; /* Show the links on hover */
+  }
+  
+  /* Styling for each additional link inside "Company" dropdown */
+  .additional-links .nav-link {
+    color: #fff; /* White text */
+    padding: 10px 15px; /* Adjust padding for better spacing */
+    font-size: 14px; /* Smaller text size */
+    text-align: left;
+    width: 100%;
+  }
+  .additional-links{
+    /* background-color: rgb(255, 255, 255); */
+    color: rgb(245, 245, 245);
+
+  }
+  .additional-links .nav-link:hover {
+    /* background-color: #555;  */
+    color: #fff;
+    font-size: medium;
+  }
+  
+  /* Adjust the behavior for small screen sizes */
+  @media (max-width: 767px) {
+    .company-container .additional-links {
+      position: static; /* Positioning as a block element on small screens */
+      display: block;
+      background-color: transparent;
+    }
+  }
+  
